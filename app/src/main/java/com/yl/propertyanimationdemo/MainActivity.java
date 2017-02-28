@@ -20,13 +20,17 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.btn_base})
+    @OnClick({R.id.btn_base, R.id.btn_xml})
     public void onClick(View v) {
         Intent intent = null;
 
         switch (v.getId()) {
             case R.id.btn_base: // 基本用法
                 intent = new Intent(this, BaseUsageActivity.class);
+                break;
+
+            case R.id.btn_xml: // 使用Xml编写
+                intent = new Intent(this, XmlUsageActivity.class);
                 break;
 
             default:

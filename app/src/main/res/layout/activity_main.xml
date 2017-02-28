@@ -15,7 +15,15 @@
             android:id="@+id/btn_base"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="基本用法"
+            android:text="属性动画基本用法"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_xml"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="使用Xml编写属性动画"
             android:textAllCaps="false" />
 
     </LinearLayout>
