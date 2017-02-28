@@ -60,7 +60,7 @@ public class BaseUsageActivity extends AppCompatActivity {
         }
 
         if (animator != null) {
-            // 动画执行时长2s
+            // 动画执行时长2s，默认300ms
             animator.setDuration(2000);
             animator.start();
         }
