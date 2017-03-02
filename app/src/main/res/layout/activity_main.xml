@@ -34,6 +34,14 @@
             android:text="ValueAnimator的实际应用"
             android:textAllCaps="false" />
 
+        <Button
+            android:id="@+id/btn_object_animator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="自定义TypeEvaluator"
+            android:textAllCaps="false" />
+
     </LinearLayout>
 
 </ScrollView>

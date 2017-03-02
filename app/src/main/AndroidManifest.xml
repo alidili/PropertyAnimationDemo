@@ -25,6 +25,9 @@
         <activity
             android:name=".activity.ValueAnimatorActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ObjectAnimatorActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

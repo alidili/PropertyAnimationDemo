@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.btn_base, R.id.btn_xml, R.id.btn_value_animator})
+    @OnClick({R.id.btn_base, R.id.btn_xml, R.id.btn_value_animator, R.id.btn_object_animator})
     public void onClick(View v) {
         Intent intent = null;
 
@@ -37,6 +37,10 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.btn_value_animator: // ValueAnimator的实际应用
                 intent = new Intent(this, ValueAnimatorActivity.class);
+                break;
+
+            case R.id.btn_object_animator: // 自定义TypeEvaluator
+                intent = new Intent(this, ObjectAnimatorActivity.class);
                 break;
 
             default:
