@@ -1,9 +1,11 @@
-package com.yl.propertyanimationdemo;
+package com.yl.propertyanimationdemo.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+
+import com.yl.propertyanimationdemo.R;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -20,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.btn_base, R.id.btn_xml})
+    @OnClick({R.id.btn_base, R.id.btn_xml, R.id.btn_value_animator})
     public void onClick(View v) {
         Intent intent = null;
 
@@ -29,8 +31,12 @@ public class MainActivity extends AppCompatActivity {
                 intent = new Intent(this, BaseUsageActivity.class);
                 break;
 
-            case R.id.btn_xml: // 使用Xml编写
+            case R.id.btn_xml: // 使用xml编写
                 intent = new Intent(this, XmlUsageActivity.class);
+                break;
+
+            case R.id.btn_value_animator: // ValueAnimator的实际应用
+                intent = new Intent(this, ValueAnimatorActivity.class);
                 break;
 
             default:

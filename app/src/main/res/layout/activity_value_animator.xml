@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_device_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2B93EC">
+
+    <com.yl.propertyanimationdemo.widget.RadarView
+        android:id="@+id/rv_device_status"
+        android:layout_width="250dp"
+        android:layout_height="230dp"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/btn_alarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#00000000"
+        android:text="报警"
+        android:textColor="#FFF"
+        android:textSize="20sp" />
+
+</RelativeLayout>
