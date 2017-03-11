@@ -3,11 +3,12 @@ package com.yl.propertyanimationdemo.widget;
 import android.animation.TimeInterpolator;
 
 /**
- * 果冻效果差值器
+ * 果冻效果插值器
  * Created by yangle on 2017/3/9.
  */
 public class JellyInterpolator implements TimeInterpolator {
 
+    // 因子数值越小振动频率越高
     private float factor;
 
     public JellyInterpolator() {

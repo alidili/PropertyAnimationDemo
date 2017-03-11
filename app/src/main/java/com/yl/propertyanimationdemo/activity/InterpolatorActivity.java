@@ -36,6 +36,7 @@ public class InterpolatorActivity extends AppCompatActivity {
         ObjectAnimator scaleYAnimator = ObjectAnimator.ofFloat(image, "scaleY", 0f, 1f);
         AnimatorSet animatorSet = new AnimatorSet();
         animatorSet.playTogether(scaleXAnimator, scaleYAnimator);
+        // 设置插值器
         animatorSet.setInterpolator(new JellyInterpolator());
         animatorSet.setDuration(3000);
         animatorSet.start();
